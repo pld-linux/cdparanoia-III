@@ -1,22 +1,28 @@
-diff -uNr cdparanoia-III-alpha9.4.orig/configure cdparanoia-III-alpha9.4/configure
---- cdparanoia-III-alpha9.4.orig/configure	Wed Feb 24 13:06:57 1999
-+++ cdparanoia-III-alpha9.4/configure	Wed Feb 24 13:08:14 1999
-@@ -829,15 +829,15 @@
+diff -Naur cdparanoia-III-alpha9.7/configure.in cdparanoia-III-alpha9.7-p/configure.in
+--- cdparanoia-III-alpha9.7/configure.in	Mon Aug 16 00:29:43 1999
++++ cdparanoia-III-alpha9.7-p/configure.in	Mon Jul 17 16:32:30 2000
+@@ -14,21 +14,19 @@
  
  if test -z "$GCC"; then
  	DEBUG="-g"
 -	OPT="-O"
-+	OPT="$RPM_OPT"
++	OPT=""
  else
  	case $host in 
  	i?86-*-linux*)
  		DEBUG="-g -Wall -fsigned-char"
 -		OPT="-O20 -ffast-math -fsigned-char -finline-functions";;
-+		OPT="$RPM_OPT -ffast-math -fsigned-char -finline-functions";;
++		OPT="-ffast-math -fsigned-char -finline-functions";;
  	*)
  		DEBUG="-g -Wall -fsigned-char"
 -		OPT="-O20 -fsigned-char";;
-+		OPT="$RPM_OPT -fsigned-char";;
++		OPT="-fsigned-char";;
          esac
  fi
+ 
+ AC_HEADER_STDC
+-
+-CFLAGS=""
+ 
+ TYPESIZES="" 
  
