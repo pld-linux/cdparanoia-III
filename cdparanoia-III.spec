@@ -121,11 +121,9 @@ Bibliotecas estáticas do cdparanoia.
 %patch1 -p1
 
 %build
-
-%ifarch athlon
-	%define _target_platform i686-pld-linux
-%endif
-
+# bleh? look at the beginning of configure.in
+cp -f /usr/share/automake/config.guess configure.guess
+cp -f /usr/share/automake/config.sub configure.sub
 %{__aclocal}
 %{__autoconf}
 %configure
