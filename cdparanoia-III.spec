@@ -147,8 +147,8 @@ install cdparanoia.1.jp $RPM_BUILD_ROOT%{_mandir}/ja/man1
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post   libs -p /sbin/ldconfig
-%postun libs -p /sbin/ldconfig
+%post	libs -p /sbin/ldconfig
+%postun	libs -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
