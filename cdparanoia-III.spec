@@ -10,7 +10,7 @@ Release:	4
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.xiph.org/paranoia/download/%{name}-%{version}.src.tgz
-# Source0-md5: 7218e778b5970a86c958e597f952f193
+# Source0-md5:	7218e778b5970a86c958e597f952f193
 Patch0:		%{name}.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-gcc34.patch
