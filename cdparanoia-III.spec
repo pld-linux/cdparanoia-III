@@ -75,6 +75,7 @@ Cdparanoia також добре справля╓ться з читанням та виправленням даних з
 Summary:	Libraries of CD Paranoia program
 Summary(pl):	Biblioteki programu CD Paranoia
 Group:		Libraries
+Obsoletes:	cdparanoia-libs
 
 %description libs
 This package contains libraries of CD Paranoia program.
