@@ -13,6 +13,7 @@ Source0:	http://www.xiph.org/paranoia/download/%{name}-%{version}.src.tgz
 # Source0-md5: 7218e778b5970a86c958e597f952f193
 Patch0:		%{name}.patch
 Patch1:		%{name}-acfix.patch
+Patch2:		%{name}-gcc34.patch
 URL:		http://www.xiph.org/paranoia/download/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -120,11 +121,12 @@ Bibliotecas estáticas do cdparanoia.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 # bleh? look at the beginning of configure.in
-cp -f /usr/share/automake/config.guess configure.guess
-cp -f /usr/share/automake/config.sub configure.sub
+cp -f %{_datadir}/automake/config.guess configure.guess
+cp -f %{_datadir}/automake/config.sub configure.sub
 %{__aclocal}
 %{__autoconf}
 %configure
