@@ -121,6 +121,11 @@ Bibliotecas estáticas do cdparanoia.
 %patch1 -p1
 
 %build
+
+%ifarch athlon
+	%define _target_platform i686-pld-linux
+%endif
+
 %{__aclocal}
 %{__autoconf}
 %configure
