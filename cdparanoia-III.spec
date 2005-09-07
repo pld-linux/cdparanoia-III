@@ -1,3 +1,5 @@
+# TODO
+# - why it's cdparanoia-III, not cdparanoia? rename to cdparanoia?
 Summary:	Utility to copy digital audio cd's
 Summary(es):	Extrator de CDs de sonido
 Summary(pl):	Program do kopiowania p³yt cd-audio
