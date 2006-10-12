@@ -8,7 +8,7 @@ Summary(ru):	Утилита для копирования цифровых аудио-CD
 Summary(uk):	Утил╕та для коп╕ювання цифрових ауд╕о-CD
 Name:		cdparanoia-III
 Version:	alpha9.8
-Release:	5
+Release:	6
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.xiph.org/paranoia/download/%{name}-%{version}.src.tgz
@@ -16,6 +16,7 @@ Source0:	http://www.xiph.org/paranoia/download/%{name}-%{version}.src.tgz
 Patch0:		%{name}.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-gcc34.patch
+Patch3:		%{name}-libs.patch
 URL:		http://www.xiph.org/paranoia/download/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -125,6 +126,7 @@ Bibliotecas estАticas do cdparanoia.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 # bleh? look at the beginning of configure.in
