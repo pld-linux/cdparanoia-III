@@ -8,7 +8,7 @@ Summary(ru):	Утилита для копирования цифровых аудио-CD
 Summary(uk):	Утил╕та для коп╕ювання цифрових ауд╕о-CD
 Name:		cdparanoia-III
 Version:	alpha9.8
-Release:	6
+Release:	7
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
