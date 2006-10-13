@@ -11,18 +11,18 @@ Version:	alpha9.8
 Release:	6
 License:	GPL
 Group:		Applications/Sound
-Source0:	http://www.xiph.org/paranoia/download/%{name}-%{version}.src.tgz
+Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
 # Source0-md5:	7218e778b5970a86c958e597f952f193
 Patch0:		%{name}.patch
 Patch1:		%{name}-acfix.patch
 Patch2:		%{name}-gcc34.patch
 Patch3:		%{name}-libs.patch
-URL:		http://www.xiph.org/paranoia/download/
+URL:		http://www.xiph.org/paranoia/
 BuildRequires:	autoconf
 BuildRequires:	automake
-Requires:	%{name}-libs = %{version}
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	%{name}-libs = %{version}-%{release}
 Obsoletes:	cdparanoia
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Cdparanoia (Paranoia III) reads digital audio directly from a CD, then
@@ -91,7 +91,7 @@ Summary:	Header files for CD Paranoia libraries
 Summary(pl):	Pliki nag³ówkowe do bibliotek programu CD Paranoia
 Summary(pt_BR):	Bibliotecas de desenvolvimento para o cdparanoia
 Group:		Development/Libraries
-Requires:	%{name}-libs = %{version}
+Requires:	%{name}-libs = %{version}-%{release}
 Obsoletes:	cdparanoia-devel
 
 %description devel
@@ -110,7 +110,7 @@ Summary:	Static libraries of CD Paranoia program
 Summary(pl):	Biblioteki statyczne programu CD Paranoia
 Summary(pt_BR):	Bibliotecas estáticas do cdparanoia
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libraries of CD Paranoia program.
@@ -141,7 +141,8 @@ cp -f %{_datadir}/automake/config.sub configure.sub
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},%{_mandir}/man1,%{_includedir}}
 
-%{__make} install BINDIR=$RPM_BUILD_ROOT%{_bindir} \
+%{__make} install \
+	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
 	MANDIR=$RPM_BUILD_ROOT%{_mandir} \
 	INCLUDEDIR=$RPM_BUILD_ROOT%{_includedir}
@@ -168,8 +169,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/*
 %attr(755,root,root) %{_libdir}/lib*.so
+%{_includedir}/*
 
 %files static
 %defattr(644,root,root,755)
