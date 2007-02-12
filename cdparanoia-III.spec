@@ -1,11 +1,11 @@
 # TODO
 # - why it's cdparanoia-III, not cdparanoia? rename to cdparanoia?
 Summary:	Utility to copy digital audio cd's
-Summary(es):	Extrator de CDs de sonido
-Summary(pl):	Program do kopiowania pЁyt cd-audio
-Summary(pt_BR):	Extrator de CDs de Аudio
-Summary(ru):	Утилита для копирования цифровых аудио-CD
-Summary(uk):	Утил╕та для коп╕ювання цифрових ауд╕о-CD
+Summary(es.UTF-8):   Extrator de CDs de sonido
+Summary(pl.UTF-8):   Program do kopiowania pе┌yt cd-audio
+Summary(pt_BR.UTF-8):   Extrator de CDs de ц║udio
+Summary(ru.UTF-8):   пёя┌п╦п╩п╦я┌п╟ п╢п╩я▐ п╨п╬п©п╦я─п╬п╡п╟п╫п╦я▐ я├п╦я└я─п╬п╡я▀я┘ п╟я┐п╢п╦п╬-CD
+Summary(uk.UTF-8):   пёя┌п╦п╩я√я┌п╟ п╢п╩я▐ п╨п╬п©я√я▌п╡п╟п╫п╫я▐ я├п╦я└я─п╬п╡п╦я┘ п╟я┐п╢я√п╬-CD
 Name:		cdparanoia-III
 Version:	alpha9.8
 Release:	7
@@ -33,63 +33,63 @@ misalignment, frame jitter and loss of streaming during atomic reads.
 Cdparanoia is also good at reading and repairing data from damaged
 CDs.
 
-%description -l es
+%description -l es.UTF-8
 Cdparanoia (Paranoia III) lee la frecuencia de sonido digital
-directamente de un CD, y a partir de Иsta escribe los datos en un
-archivo o una conexiСn temporal en formato WAV, AIFC o PCM 16 bits. El
+directamente de un CD, y a partir de ц╘sta escribe los datos en un
+archivo o una conexiцЁn temporal en formato WAV, AIFC o PCM 16 bits. El
 poder del Cdparanoia consiste en la capacidad de usar una gran
 variedad de hardware, inclusive unidades de accionamiento (drives)
 baratos con problemas de alineamiento y que pierden datos durante la
-lectura. El Cdparanoia tambiИn sirve para leer y reparar datos de un
+lectura. El Cdparanoia tambiц╘n sirve para leer y reparar datos de un
 CD con defecto.
 
-%description -l pl
-CDDA Paranoia czyta z kompaktu w postaci cyfrowej ╤cie©kЙ audio, a
-nastЙpnie zapisuje j╠ do pliku lub potoku. Formatem zapisu mo©e byФ
+%description -l pl.UTF-8
+CDDA Paranoia czyta z kompaktu w postaci cyfrowej е⌡cieе╪kд≥ audio, a
+nastд≥pnie zapisuje jд┘ do pliku lub potoku. Formatem zapisu moе╪e byд┤
 plik typu WAV, AIFC lub czysty, 16-bitowy PCM.
 
-%description -l pt_BR
-Cdparanoia (Paranoia III) lЙ freqЭЙncia de Аudio digital diretamente
-de um CD, e entЦo escreve os dados para um arquivo ou pipe em formato
-WAV, AIFC ou PCM 16 bits. O poder do Cdparanoia estА na capacidade de
+%description -l pt_BR.UTF-8
+Cdparanoia (Paranoia III) lц╙ freqц╪ц╙ncia de ц║udio digital diretamente
+de um CD, e entцёo escreve os dados para um arquivo ou pipe em formato
+WAV, AIFC ou PCM 16 bits. O poder do Cdparanoia estц║ na capacidade de
 usar uma grande variedade de hardware, inclusive drives baratos com
 problemas de alinhamento e que perdem dados durante a leitura. O
-Cdparanoia tambИm И bom para ler e reparar dados de um CD danificado.
+Cdparanoia tambц╘m ц╘ bom para ler e reparar dados de um CD danificado.
 
-%description -l ru
-Cdparanoia (Paranoia III) читает цифровое аудио напрямую с CD,
-записывая данные в файл или канал в форматах WAV, AIFC или raw 16 bit
-linear PCM. Сильная сторона Cdparanoia - в возможности работать с
-разнообразным аппаратным обеспечением, включая дешевые дисководы,
-склонные к misalignment, frame jitter и loss of streaming during
-atomic reads. Cdparanoia также хорошо справляется с чтением и
-исправлением данных с поврежденных CD.
+%description -l ru.UTF-8
+Cdparanoia (Paranoia III) я┤п╦я┌п╟п╣я┌ я├п╦я└я─п╬п╡п╬п╣ п╟я┐п╢п╦п╬ п╫п╟п©я─я▐п╪я┐я▌ я│ CD,
+п╥п╟п©п╦я│я▀п╡п╟я▐ п╢п╟п╫п╫я▀п╣ п╡ я└п╟п╧п╩ п╦п╩п╦ п╨п╟п╫п╟п╩ п╡ я└п╬я─п╪п╟я┌п╟я┘ WAV, AIFC п╦п╩п╦ raw 16 bit
+linear PCM. п║п╦п╩я▄п╫п╟я▐ я│я┌п╬я─п╬п╫п╟ Cdparanoia - п╡ п╡п╬п╥п╪п╬п╤п╫п╬я│я┌п╦ я─п╟п╠п╬я┌п╟я┌я▄ я│
+я─п╟п╥п╫п╬п╬п╠я─п╟п╥п╫я▀п╪ п╟п©п©п╟я─п╟я┌п╫я▀п╪ п╬п╠п╣я│п©п╣я┤п╣п╫п╦п╣п╪, п╡п╨п╩я▌я┤п╟я▐ п╢п╣я┬п╣п╡я▀п╣ п╢п╦я│п╨п╬п╡п╬п╢я▀,
+я│п╨п╩п╬п╫п╫я▀п╣ п╨ misalignment, frame jitter п╦ loss of streaming during
+atomic reads. Cdparanoia я┌п╟п╨п╤п╣ я┘п╬я─п╬я┬п╬ я│п©я─п╟п╡п╩я▐п╣я┌я│я▐ я│ я┤я┌п╣п╫п╦п╣п╪ п╦
+п╦я│п©я─п╟п╡п╩п╣п╫п╦п╣п╪ п╢п╟п╫п╫я▀я┘ я│ п©п╬п╡я─п╣п╤п╢п╣п╫п╫я▀я┘ CD.
 
-%description -l uk
-Cdparanoia (Paranoia III) чита╓ цифрове ауд╕о напряму з CD та запису╓
-дан╕ в файл чи канал в форматах WAV, AIFC чи raw 16 bit linear PCM.
-Сильна сторона Cdparanoia - в можливост╕ працювати з р╕зноман╕тним
-апаратним забезпеченням, включаючи дешев╕ дисководи, схильн╕ до
-misalignment, frame jitter та loss of streaming during atomic reads.
-Cdparanoia також добре справля╓ться з читанням та виправленням даних з
-пошкоджених CD.
+%description -l uk.UTF-8
+Cdparanoia (Paranoia III) я┤п╦я┌п╟я■ я├п╦я└я─п╬п╡п╣ п╟я┐п╢я√п╬ п╫п╟п©я─я▐п╪я┐ п╥ CD я┌п╟ п╥п╟п©п╦я│я┐я■
+п╢п╟п╫я√ п╡ я└п╟п╧п╩ я┤п╦ п╨п╟п╫п╟п╩ п╡ я└п╬я─п╪п╟я┌п╟я┘ WAV, AIFC я┤п╦ raw 16 bit linear PCM.
+п║п╦п╩я▄п╫п╟ я│я┌п╬я─п╬п╫п╟ Cdparanoia - п╡ п╪п╬п╤п╩п╦п╡п╬я│я┌я√ п©я─п╟я├я▌п╡п╟я┌п╦ п╥ я─я√п╥п╫п╬п╪п╟п╫я√я┌п╫п╦п╪
+п╟п©п╟я─п╟я┌п╫п╦п╪ п╥п╟п╠п╣п╥п©п╣я┤п╣п╫п╫я▐п╪, п╡п╨п╩я▌я┤п╟я▌я┤п╦ п╢п╣я┬п╣п╡я√ п╢п╦я│п╨п╬п╡п╬п╢п╦, я│я┘п╦п╩я▄п╫я√ п╢п╬
+misalignment, frame jitter я┌п╟ loss of streaming during atomic reads.
+Cdparanoia я┌п╟п╨п╬п╤ п╢п╬п╠я─п╣ я│п©я─п╟п╡п╩я▐я■я┌я▄я│я▐ п╥ я┤п╦я┌п╟п╫п╫я▐п╪ я┌п╟ п╡п╦п©я─п╟п╡п╩п╣п╫п╫я▐п╪ п╢п╟п╫п╦я┘ п╥
+п©п╬я┬п╨п╬п╢п╤п╣п╫п╦я┘ CD.
 
 %package libs
 Summary:	Libraries of CD Paranoia program
-Summary(pl):	Biblioteki programu CD Paranoia
+Summary(pl.UTF-8):   Biblioteki programu CD Paranoia
 Group:		Libraries
 Obsoletes:	cdparanoia-libs
 
 %description libs
 This package contains libraries of CD Paranoia program.
 
-%description libs -l pl
-W pakiecie tym znajduj╠ siЙ biblioteki programu CD Paranoia.
+%description libs -l pl.UTF-8
+W pakiecie tym znajdujд┘ siд≥ biblioteki programu CD Paranoia.
 
 %package devel
 Summary:	Header files for CD Paranoia libraries
-Summary(pl):	Pliki nagЁСwkowe do bibliotek programu CD Paranoia
-Summary(pt_BR):	Bibliotecas de desenvolvimento para o cdparanoia
+Summary(pl.UTF-8):   Pliki nagе┌цЁwkowe do bibliotek programu CD Paranoia
+Summary(pt_BR.UTF-8):   Bibliotecas de desenvolvimento para o cdparanoia
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Obsoletes:	cdparanoia-devel
@@ -97,29 +97,29 @@ Obsoletes:	cdparanoia-devel
 %description devel
 This package contains header files for CD Paranoia libraries.
 
-%description devel -l pl
-W pakiecie tym znajduj╠ siЙ pliki nagЁСwkowe do bibliotek programu CD
+%description devel -l pl.UTF-8
+W pakiecie tym znajdujд┘ siд≥ pliki nagе┌цЁwkowe do bibliotek programu CD
 Paranoia.
 
-%description devel -l pt_BR
-Arquivos de inclusЦo e bibliotecas necessАrias para desenvolver
+%description devel -l pt_BR.UTF-8
+Arquivos de inclusцёo e bibliotecas necessц║rias para desenvolver
 programas que utilizam o cdparanoia.
 
 %package static
 Summary:	Static libraries of CD Paranoia program
-Summary(pl):	Biblioteki statyczne programu CD Paranoia
-Summary(pt_BR):	Bibliotecas estАticas do cdparanoia
+Summary(pl.UTF-8):   Biblioteki statyczne programu CD Paranoia
+Summary(pt_BR.UTF-8):   Bibliotecas estц║ticas do cdparanoia
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libraries of CD Paranoia program.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne programu CD Paranoia.
 
-%description static -l pt_BR
-Bibliotecas estАticas do cdparanoia.
+%description static -l pt_BR.UTF-8
+Bibliotecas estц║ticas do cdparanoia.
 
 %prep
 %setup -q
