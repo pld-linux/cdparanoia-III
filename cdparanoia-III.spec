@@ -1,11 +1,11 @@
 # TODO
 # - why it's cdparanoia-III, not cdparanoia? rename to cdparanoia?
 Summary:	Utility to copy digital audio cd's
-Summary(es.UTF-8):   Extrator de CDs de sonido
-Summary(pl.UTF-8):   Program do kopiowania płyt cd-audio
-Summary(pt_BR.UTF-8):   Extrator de CDs de áudio
-Summary(ru.UTF-8):   Утилита для копирования цифровых аудио-CD
-Summary(uk.UTF-8):   Утиліта для копіювання цифрових аудіо-CD
+Summary(es.UTF-8):	Extrator de CDs de sonido
+Summary(pl.UTF-8):	Program do kopiowania płyt cd-audio
+Summary(pt_BR.UTF-8):	Extrator de CDs de áudio
+Summary(ru.UTF-8):	Утилита для копирования цифровых аудио-CD
+Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
 Version:	alpha9.8
 Release:	7
@@ -76,7 +76,7 @@ Cdparanoia також добре справляється з читанням т
 
 %package libs
 Summary:	Libraries of CD Paranoia program
-Summary(pl.UTF-8):   Biblioteki programu CD Paranoia
+Summary(pl.UTF-8):	Biblioteki programu CD Paranoia
 Group:		Libraries
 Obsoletes:	cdparanoia-libs
 
@@ -88,8 +88,8 @@ W pakiecie tym znajdują się biblioteki programu CD Paranoia.
 
 %package devel
 Summary:	Header files for CD Paranoia libraries
-Summary(pl.UTF-8):   Pliki nagłówkowe do bibliotek programu CD Paranoia
-Summary(pt_BR.UTF-8):   Bibliotecas de desenvolvimento para o cdparanoia
+Summary(pl.UTF-8):	Pliki nagłówkowe do bibliotek programu CD Paranoia
+Summary(pt_BR.UTF-8):	Bibliotecas de desenvolvimento para o cdparanoia
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Obsoletes:	cdparanoia-devel
@@ -107,8 +107,8 @@ programas que utilizam o cdparanoia.
 
 %package static
 Summary:	Static libraries of CD Paranoia program
-Summary(pl.UTF-8):   Biblioteki statyczne programu CD Paranoia
-Summary(pt_BR.UTF-8):   Bibliotecas estáticas do cdparanoia
+Summary(pl.UTF-8):	Biblioteki statyczne programu CD Paranoia
+Summary(pt_BR.UTF-8):	Bibliotecas estáticas do cdparanoia
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
