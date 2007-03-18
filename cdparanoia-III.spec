@@ -1,5 +1,3 @@
-# TODO
-# - why it's cdparanoia-III, not cdparanoia? rename to cdparanoia?
 Summary:	Utility to copy digital audio cd's
 Summary(es.UTF-8):	Extrator de CDs de sonido
 Summary(pl.UTF-8):	Program do kopiowania płyt cd-audio
@@ -8,7 +6,7 @@ Summary(ru.UTF-8):	Утилита для копирования цифровых
 Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
 Version:	alpha9.8
-Release:	7
+Release:	8
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
@@ -149,6 +147,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},%{_mandir}/man1,%{_includedir}}
 
 install -d $RPM_BUILD_ROOT%{_mandir}/ja/man1
 install cdparanoia.1.jp $RPM_BUILD_ROOT%{_mandir}/ja/man1
+
+# for rpm autodeps
+chmod +x $RPM_BUILD_ROOT%{_libdir}/lib*so.*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
