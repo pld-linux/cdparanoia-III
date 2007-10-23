@@ -5,20 +5,18 @@ Summary(pt_BR.UTF-8):	Extrator de CDs de áudio
 Summary(ru.UTF-8):	Утилита для копирования цифровых аудио-CD
 Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
-Version:	alpha9.8
-Release:	9
+Version:	10pre0
+Release:	1
+Epoch:		1
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
-# Source0-md5:	7218e778b5970a86c958e597f952f193
-Patch0:		%{name}.patch
-Patch1:		%{name}-acfix.patch
-Patch2:		%{name}-gcc34.patch
-Patch3:		%{name}-libs.patch
+# Source0-md5:	104b99604ea1422ef87b32d15903171f
+Patch0:		%{name}-acfix.patch
 URL:		http://www.xiph.org/paranoia/
 BuildRequires:	autoconf
 BuildRequires:	automake
-Requires:	%{name}-libs = %{version}-%{release}
+Requires:	%{name}-libs = %{epoch}:%{version}-%{release}
 Obsoletes:	cdparanoia
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -89,7 +87,7 @@ Summary:	Header files for CD Paranoia libraries
 Summary(pl.UTF-8):	Pliki nagłówkowe do bibliotek programu CD Paranoia
 Summary(pt_BR.UTF-8):	Bibliotecas de desenvolvimento para o cdparanoia
 Group:		Development/Libraries
-Requires:	%{name}-libs = %{version}-%{release}
+Requires:	%{name}-libs = %{epoch}:%{version}-%{release}
 Obsoletes:	cdparanoia-devel
 
 %description devel
@@ -108,7 +106,7 @@ Summary:	Static libraries of CD Paranoia program
 Summary(pl.UTF-8):	Biblioteki statyczne programu CD Paranoia
 Summary(pt_BR.UTF-8):	Bibliotecas estáticas do cdparanoia
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Static libraries of CD Paranoia program.
@@ -122,9 +120,6 @@ Bibliotecas estáticas do cdparanoia.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
 
 %build
 # bleh? look at the beginning of configure.in

@@ -11,18 +11,3 @@
  AC_PROG_RANLIB
  AC_CHECK_PROG(AR,ar,ar)
  AC_CHECK_PROG(INSTALL,install,install)
-@@ -44,10 +44,10 @@
- 	$ac_cv_sizeof_long) SIZE32="long";;
- esac
- 
--AC_CHECK_TYPE(int16_t,$SIZE16)
--AC_CHECK_TYPE(int32_t,$SIZE32)
--AC_CHECK_TYPE(u_int16_t,$SIZE16)
--AC_CHECK_TYPE(u_int32_t,$SIZE32)
-+AC_CHECK_TYPE([int16_t],[AC_DEFINE_UNQUOTED([int16_t],[$SIZE16])])
-+AC_CHECK_TYPE([int32_t],[AC_DEFINE_UNQUOTED([int32_t],[$SIZE32])])
-+AC_CHECK_TYPE([u_int16_t],[AC_DEFINE_UNQUOTED([u_int16_t],[$SIZE16])])
-+AC_CHECK_TYPE([u_int32_t],[AC_DEFINE_UNQUOTED([u_int32_t],[$SIZE32])])
- 
- if test -z "$SIZE16"; then
- 	AC_MSG_ERROR(No 16 bit tupe found on this platform!)
