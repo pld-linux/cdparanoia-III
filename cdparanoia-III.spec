@@ -8,7 +8,7 @@ Name:		cdparanoia-III
 Version:	10pre0
 Release:	1
 Epoch:		1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
 # Source0-md5:	104b99604ea1422ef87b32d15903171f
@@ -140,8 +140,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},%{_mandir}/man1,%{_includedir}}
 	MANDIR=$RPM_BUILD_ROOT%{_mandir} \
 	INCLUDEDIR=$RPM_BUILD_ROOT%{_includedir}
 
-install -d $RPM_BUILD_ROOT%{_mandir}/ja/man1
-install cdparanoia.1.jp $RPM_BUILD_ROOT%{_mandir}/ja/man1
+install -D cdparanoia.1.jp $RPM_BUILD_ROOT%{_mandir}/ja/man1/cdparanoia.1
 
 # for rpm autodeps
 chmod +x $RPM_BUILD_ROOT%{_libdir}/lib*so.*
@@ -156,18 +155,25 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README FAQ.txt
 %attr(755,root,root) %{_bindir}/cdparanoia
-%{_mandir}/man?/*
-%lang(ja) %{_mandir}/ja/man1/*
+%{_mandir}/man1/cdparanoia.1*
+%lang(ja) %{_mandir}/ja/man1/cdparanoia.1*
 
 %files libs
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %{_libdir}/libcdda_interface.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libcdda_interface.so.0
+%attr(755,root,root) %{_libdir}/libcdda_paranoia.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libcdda_paranoia.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_includedir}/*
+%attr(755,root,root) %{_libdir}/libcdda_interface.so
+%attr(755,root,root) %{_libdir}/libcdda_paranoia.so
+%{_includedir}/cdda_interface.h
+%{_includedir}/cdda_paranoia.h
+%{_includedir}/utils.h
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libcdda_interface.a
+%{_libdir}/libcdda_paranoia.a
