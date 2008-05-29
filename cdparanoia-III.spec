@@ -5,13 +5,13 @@ Summary(pt_BR.UTF-8):	Extrator de CDs de áudio
 Summary(ru.UTF-8):	Утилита для копирования цифровых аудио-CD
 Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
-Version:	10pre0
+Version:	10pre2
 Release:	1
 Epoch:		1
-License:	GPL v2
+License:	LGPL v3 (libraries), GPL v3 (utility)
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
-# Source0-md5:	104b99604ea1422ef87b32d15903171f
+# Source0-md5:	678dc751a6e74e4a19c67737b306dfec
 Patch0:		%{name}-acfix.patch
 URL:		http://www.xiph.org/paranoia/
 BuildRequires:	autoconf
@@ -73,6 +73,7 @@ Cdparanoia також добре справляється з читанням т
 %package libs
 Summary:	Libraries of CD Paranoia program
 Summary(pl.UTF-8):	Biblioteki programu CD Paranoia
+License:	LGPL v3
 Group:		Libraries
 Obsoletes:	cdparanoia-libs
 
@@ -86,6 +87,7 @@ W pakiecie tym znajdują się biblioteki programu CD Paranoia.
 Summary:	Header files for CD Paranoia libraries
 Summary(pl.UTF-8):	Pliki nagłówkowe do bibliotek programu CD Paranoia
 Summary(pt_BR.UTF-8):	Bibliotecas de desenvolvimento para o cdparanoia
+License:	LGPL v3
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{epoch}:%{version}-%{release}
 Obsoletes:	cdparanoia-devel
@@ -105,6 +107,7 @@ programas que utilizam o cdparanoia.
 Summary:	Static libraries of CD Paranoia program
 Summary(pl.UTF-8):	Biblioteki statyczne programu CD Paranoia
 Summary(pt_BR.UTF-8):	Bibliotecas estáticas do cdparanoia
+License:	LGPL v3
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
@@ -153,7 +156,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README FAQ.txt
+%doc README
 %attr(755,root,root) %{_bindir}/cdparanoia
 %{_mandir}/man1/cdparanoia.1*
 %lang(ja) %{_mandir}/ja/man1/cdparanoia.1*
