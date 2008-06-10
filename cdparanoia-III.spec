@@ -7,7 +7,7 @@ Summary(uk.UTF-8):	Утиліта для копіювання цифрових �
 Name:		cdparanoia-III
 Version:	10.0
 Release:	1
-Epoch:		1
+Epoch:		2
 License:	LGPL v3 (libraries), GPL v3 (utility)
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
