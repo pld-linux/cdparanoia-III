@@ -5,13 +5,13 @@ Summary(pt_BR.UTF-8):	Extrator de CDs de áudio
 Summary(ru.UTF-8):	Утилита для копирования цифровых аудио-CD
 Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
-Version:	10pre2
+Version:	10.0
 Release:	1
 Epoch:		1
 License:	LGPL v3 (libraries), GPL v3 (utility)
 Group:		Applications/Sound
 Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
-# Source0-md5:	678dc751a6e74e4a19c67737b306dfec
+# Source0-md5:	03a1aba5cf45ce7b83389d442a275acf
 Patch0:		%{name}-acfix.patch
 URL:		http://www.xiph.org/paranoia/
 BuildRequires:	autoconf
