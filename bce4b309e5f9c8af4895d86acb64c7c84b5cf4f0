@@ -1,0 +1,3 @@
+- release 2
+- ldconfig for libs subpackage
+- requires: %{name}-libs
