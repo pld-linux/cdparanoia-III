@@ -1,0 +1,11 @@
+--- cdparanoia-III-10.2/interface/Makefile.in~	2008-08-21 18:08:54.000000000 +0200
++++ cdparanoia-III-10.2/interface/Makefile.in	2011-05-19 22:27:16.537755801 +0200
+@@ -46,7 +46,7 @@
+ 	$(RANLIB) libcdda_interface.a
+ 
+ libcdda_interface.so: 	$(OFILES)	
+-	$(CC) -fpic -shared -o libcdda_interface.so.0.$(VERSION) -Wl,-soname -Wl,libcdda_interface.so.0 $(OFILES) $(LIBS)
++	$(CC) -fPIC -shared -o libcdda_interface.so.0.$(VERSION) -Wl,-soname -Wl,libcdda_interface.so.0 $(OFILES) $(LIBS)
+ 	[ -e libcdda_interface.so.0 ] || ln -s libcdda_interface.so.0.$(VERSION) libcdda_interface.so.0
+ 	[ -e libcdda_interface.so ] || ln -s libcdda_interface.so.0.$(VERSION) libcdda_interface.so
+ 
