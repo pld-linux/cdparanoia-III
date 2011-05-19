@@ -15,6 +15,7 @@ Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tg
 Patch0:		%{name}-acfix.patch
 Patch1:		%{name}-gcc43.patch
 Patch2:		%{name}-buffer.patch
+Patch3:		%{name}-fpic.patch
 URL:		http://www.xiph.org/paranoia/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -127,6 +128,7 @@ Bibliotecas estáticas do cdparanoia.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p0
+%patch3 -p1
 
 %build
 # bleh? look at the beginning of configure.in
