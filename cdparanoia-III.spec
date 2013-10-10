@@ -6,7 +6,7 @@ Summary(ru.UTF-8):	Утилита для копирования цифровых
 Summary(uk.UTF-8):	Утиліта для копіювання цифрових аудіо-CD
 Name:		cdparanoia-III
 Version:	10.2
-Release:	4
+Release:	5
 Epoch:		2
 License:	LGPL v2 (libraries), GPL v2 (utility)
 Group:		Applications/Sound
@@ -137,7 +137,7 @@ cp -f %{_datadir}/automake/config.sub configure.sub
 %{__aclocal}
 %{__autoconf}
 %configure
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -150,6 +150,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir},%{_mandir}/man1,%{_includedir}}
 	INCLUDEDIR=$RPM_BUILD_ROOT%{_includedir}
 
 install -D cdparanoia.1.jp $RPM_BUILD_ROOT%{_mandir}/ja/man1/cdparanoia.1
+
+# fc compat
+ln -s . $RPM_BUILD_ROOT%{_includedir}/cdda
 
 # for rpm autodeps
 chmod +x $RPM_BUILD_ROOT%{_libdir}/lib*so.*
@@ -178,6 +181,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libcdda_interface.so
 %attr(755,root,root) %{_libdir}/libcdda_paranoia.so
+%dir %{_includedir}/cdda
 %{_includedir}/cdda_interface.h
 %{_includedir}/cdda_paranoia.h
 %{_includedir}/utils.h
