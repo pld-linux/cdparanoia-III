@@ -181,7 +181,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libcdda_interface.so
 %attr(755,root,root) %{_libdir}/libcdda_paranoia.so
-%dir %{_includedir}/cdda
+%{_includedir}/cdda
 %{_includedir}/cdda_interface.h
 %{_includedir}/cdda_paranoia.h
 %{_includedir}/utils.h
