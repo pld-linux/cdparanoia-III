@@ -132,11 +132,12 @@ Bibliotecas estáticas do cdparanoia.
 
 %build
 # bleh? look at the beginning of configure.in
-cp -f %{_datadir}/automake/config.guess configure.guess
-cp -f %{_datadir}/automake/config.sub configure.sub
+cp -f %{_datadir}/automake/config.guess config.guess
+cp -f %{_datadir}/automake/config.sub config.sub
 %{__aclocal}
 %{__autoconf}
 %configure
+
 %{__make} -j1
 
 %install
