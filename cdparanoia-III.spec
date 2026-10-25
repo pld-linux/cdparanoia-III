@@ -10,13 +10,13 @@ Release:	7
 Epoch:		2
 License:	LGPL v2 (libraries), GPL v2 (utility)
 Group:		Applications/Sound
-Source0:	http://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
+Source0:	https://downloads.xiph.org/releases/cdparanoia/%{name}-%{version}.src.tgz
 # Source0-md5:	b304bbe8ab63373924a744eac9ebc652
 Patch0:		%{name}-acfix.patch
 Patch1:		%{name}-gcc43.patch
 Patch2:		%{name}-buffer.patch
 Patch3:		%{name}-fpic.patch
-URL:		http://www.xiph.org/paranoia/
+URL:		https://www.xiph.org/paranoia/
 BuildRequires:	autoconf
 BuildRequires:	automake
 Requires:	%{name}-libs = %{epoch}:%{version}-%{release}
